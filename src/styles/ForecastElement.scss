@@ -1,0 +1,11 @@
+.forecast-card {
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    div {
+        margin-right: 10px;
+    }
+}
