@@ -1,6 +1,7 @@
 import React from 'react';
 import CurrentWeather from '../components/CurrentWeather';
 import ForecastElement from '../components/ForecastElement';
+import './../styles/Main.scss';
 
 const Main: React.FC = () => {
   const currentWeatherData = {

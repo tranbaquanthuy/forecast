@@ -1,11 +1,17 @@
 .forecast {
     .forecast-group {
       border: 1px solid #ccc;
-      padding: 10px; 
       margin-bottom: 20px; 
-    }
+      position: relative;
 
-    .five-day-forecast-detail {
+      > h2 {
+        position: absolute;
+        margin: 0;
+        left: 15px;
+      }
 
+      .forecast-card {
+        margin-top: 30px;
+      }
     }
 }

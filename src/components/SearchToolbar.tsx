@@ -9,7 +9,7 @@ const SearchToolBar: React.FC<SearchBarProps> = () => {
   return (
     <div className="search-bar">
       <span>
-       <Icon src="../assets/search.png" alt="Search Icon"/>
+       <Icon src="https://img.icons8.com/color/search" alt="Search Icon"/>
       </span>
     </div>
   );
