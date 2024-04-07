@@ -1,4 +1,8 @@
 .forecast {
+    > h2 {
+      text-align: left;
+    }
+
     .forecast-group {
       border: 1px solid #ccc;
       margin-bottom: 20px; 
