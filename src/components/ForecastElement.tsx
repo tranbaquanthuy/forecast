@@ -19,8 +19,7 @@ const ForecastElement: React.FC<ForecastElementProps> = ({
         <h3>{time}</h3>
       </div>
       <div className="temperature">
-        <Icon src="https://openweathermap.org/img/wn/04n@2x.png" alt="Search Icon"/>
-        <p>{temperature}</p>
+        <Icon src="https://openweathermap.org/img/wn/04n@2x.png" alt="Search Icon" value={temperature}/>
       </div>
       <div className="description">
         <p>{description}</p>

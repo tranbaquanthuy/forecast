@@ -1,5 +1,6 @@
 import React from 'react';
 import BoldLabel from './BoldLabel';
+import "../../styles/Icon.scss";
 
 interface IconProps {
   src: string;
