@@ -35,7 +35,7 @@ const CurrentWeather: React.FC<CurrentWeatherProps> = ({
       </div>
       <div className="weather-details">
         <WeatherDetail label="Humidity" value={humidity} />
-        <WeatherDetail label="Wind Speed" value={windSpeed} />
+        <WeatherDetail label="Wind Speed" value={windSpeed} isDisplayWindIcon={true}/>
         <WeatherDetail label="Visibility" value={visibility} />
       </div>
     </div>

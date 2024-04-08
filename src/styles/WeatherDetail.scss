@@ -1,3 +1,11 @@
 .weather-detail {
     margin-right: 100px;
+
+    .wind-icon {
+        display: flex;
+
+        img {
+            width: 25px;
+        }
+    }
 }

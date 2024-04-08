@@ -4,14 +4,11 @@
     align-items: center;
     border: 2px solid #ccc;
     width: calc(100% - 4px);
-    position: relative;
   
     h2 {
-      margin-bottom: 1rem;
-      position: absolute;
-      left: 15px; 
-      top: 10px;
-      margin: 0;
+      width: 100%;
+      text-align: left;
+      margin-left: 50px;
     }
   
     img {

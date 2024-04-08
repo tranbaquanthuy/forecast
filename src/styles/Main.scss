@@ -1,17 +1,16 @@
 .forecast {
     > h2 {
       text-align: left;
+      margin-left: 20px;
     }
 
     .forecast-group {
       border: 1px solid #ccc;
       margin-bottom: 20px; 
-      position: relative;
 
       > h2 {
-        position: absolute;
-        margin: 0;
-        left: 15px;
+        text-align: left;
+        margin-left: 20px;
       }
 
       .forecast-card {
