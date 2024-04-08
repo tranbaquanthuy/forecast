@@ -1,1 +1,8 @@
 node_modules
+.idea/.gitignore
+.idea/forecast.iml
+.gitignore
+.idea/modules.xml
+.idea/vcs.xml
+.idea/misc.xml
+.gitignore
