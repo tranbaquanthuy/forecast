@@ -1,30 +1,15 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import CurrentWeather from '../components/CurrentWeather';
 import ForecastElement from '../components/ForecastElement';
 import './../styles/Main.scss';
+import {WeatherContext} from "../contexts/WeatherContext";
 
 const Main: React.FC = () => {
-  const currentWeatherData = {
-    date: 'April 6, 2024',
-    iconUrl: 'https://openweathermap.org/img/wn/04n@2x.png',
-    temperature: '26°C',
-    description: 'Broken Clouds',
-    humidity: '96%',
-    windSpeed: '1.54 m/s',
-    visibility: '8 km',
-  };
-
-  const forecastData = [
-    { date: 'April 6, 2024', time: '08:00', temperature: '25.35/25.22°C', description: 'moderate rain' },
-    { date: 'April 7, 2024', time: '11:00', temperature: '25.02/24.82°C', description: 'heavy intensity rain' },
-    { date: 'April 6, 2024', time: '14:00', temperature: '24.31/24.31°C', description: 'heavy intensity rain' },
-    { date: 'April 7, 2024', time: '17:00', temperature: '24.02/24.02°C', description: 'moderate rain' },
-    { date: 'April 8, 2024', time: '08:00', temperature: '25.24/25.24°C', description: 'broken clouds' },
-  ];
+  const weatherContext = useContext(WeatherContext);
 
   // Group forecastData by date
   const groupedForecastData: {[key: string]: any[]} = {};
-  forecastData.forEach((forecast) => {
+  weatherContext.forecastData.forEach((forecast) => {
     const { date, ...rest } = forecast;
     if (!groupedForecastData[date]) {
       groupedForecastData[date] = [];
@@ -45,7 +30,7 @@ const Main: React.FC = () => {
 
   return (
     <div className="home-page">
-      <CurrentWeather {...currentWeatherData} />
+      <CurrentWeather {...weatherContext.currentWeatherData} />
       <div className="forecast">
         <h2>5-day Forecast (3 Hours)</h2>
         <div className='five-days-forecast-detail'>
